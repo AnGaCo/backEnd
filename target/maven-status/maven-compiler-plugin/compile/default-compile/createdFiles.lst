@@ -4,6 +4,7 @@ back\entity\Experiencia.class
 back\repository\MiPerfilRepository.class
 back\security\dto\JwtDto.class
 back\service\IProyectoService.class
+back\WebConfig.class
 back\dto\Mensaje.class
 back\security\service\UsuarioService.class
 back\security\entity\Rol.class
