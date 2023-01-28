@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import back.service.IPerfilService;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/perfil")
-//@CrossOrigin(origins = "http://localhost:4200")
 public class PerfilController {
     
     @Autowired
