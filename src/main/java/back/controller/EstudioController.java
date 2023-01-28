@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/estudio")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class EstudioController {
     
     @Autowired
@@ -22,7 +22,7 @@ public class EstudioController {
         estuServ.agregarEstudio(est);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editStudy(@PathVariable("id") int id, 
                            @RequestBody Estudio est){

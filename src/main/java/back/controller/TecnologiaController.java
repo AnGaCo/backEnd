@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/tecnologia")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class TecnologiaController {
     
     @Autowired
@@ -22,7 +22,7 @@ public class TecnologiaController {
         tecnoServ.agregarTecnologia(tec);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editTechnology(@PathVariable("id") int id, 
                            @RequestBody Tecnologia tec){

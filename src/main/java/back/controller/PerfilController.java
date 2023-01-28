@@ -10,7 +10,7 @@ import back.service.IPerfilService;
 
 @RestController
 @RequestMapping("/api/perfil")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class PerfilController {
     
     @Autowired
@@ -22,7 +22,7 @@ public class PerfilController {
         perfilServ.crearPerfil(pers);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editProfile(@PathVariable("id") int id, 
                            @RequestBody MiPerfil pers){

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/experiencia")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class ExperienciaController {
     
     @Autowired
@@ -22,7 +22,7 @@ public class ExperienciaController {
         expServ.agregarExperiencia(exp);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editExperience(@PathVariable("id") int id, 
                            @RequestBody Experiencia exp){
