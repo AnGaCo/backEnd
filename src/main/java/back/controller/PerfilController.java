@@ -8,8 +8,8 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import back.service.IPerfilService;
 
+@CrossOrigin(origins = {"*"}, maxAge = 4800, allowCredentials = "false")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/perfil")
 public class PerfilController {
     
