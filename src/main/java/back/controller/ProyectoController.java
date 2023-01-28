@@ -22,7 +22,7 @@ public class ProyectoController {
         proServ.agregarProyecto(pro);
     }
     
-    //@PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editProject(@PathVariable("id") int id, 
                            @RequestBody Proyecto pro){

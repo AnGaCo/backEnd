@@ -22,7 +22,7 @@ public class EstudioController {
         estuServ.agregarEstudio(est);
     }
     
-    //@PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editStudy(@PathVariable("id") int id, 
                            @RequestBody Estudio est){

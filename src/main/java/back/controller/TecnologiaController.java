@@ -22,7 +22,7 @@ public class TecnologiaController {
         tecnoServ.agregarTecnologia(tec);
     }
     
-    //@PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editTechnology(@PathVariable("id") int id, 
                            @RequestBody Tecnologia tec){

@@ -22,7 +22,7 @@ public class ExperienciaController {
         expServ.agregarExperiencia(exp);
     }
     
-    //@PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/edit/{id}")
     public void editExperience(@PathVariable("id") int id, 
                            @RequestBody Experiencia exp){
