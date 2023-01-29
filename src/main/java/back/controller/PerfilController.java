@@ -8,9 +8,9 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import back.service.IPerfilService;
 
-//@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/perfil")
+@CrossOrigin(origins = "http://localhost:4200")
 public class PerfilController {
     
     @Autowired
