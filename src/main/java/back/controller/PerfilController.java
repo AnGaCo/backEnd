@@ -10,7 +10,7 @@ import back.service.IPerfilService;
 
 @RestController
 @RequestMapping("/api/perfil")
-@CrossOrigin(origins = {"https://manuelorozco-portfolio.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://manuelorozco-portfolio.web.app"})
 public class PerfilController {
     
     @Autowired
